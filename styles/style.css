@@ -541,6 +541,33 @@ body {
     height: 46px;
 }
 
+#contactForm .form-group #emailBox {
+    padding: 4px 4px 0 4px;
+    height: auto;
+    overflow: auto;
+}
+#contactForm .form-group #emailBox .btn-success {
+    padding: 8px 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+#contactForm .form-group #email {
+    height: 40px;
+    padding: 8px 16px 12px 14px;
+    border: 0;
+    display: inline-block;
+    box-shadow: 0 0 0 0;
+    border-radius: 0;
+}
+
+#contactForm .form-group #email:-webkit-autofill {
+    /*-webkit-text-fill-color: white !important;*/
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+
+
 #contactForm #plus {
     position: absolute;
     top: 75px;

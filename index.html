@@ -243,12 +243,15 @@
 
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <form role="form">
+                            <form role="form" name="myForm">
                                 <fieldset>
                                     <div class="form-group">
                                         <label for="email">Contacts</label>
-                                        <input class="form-control" placeholder="E-mail" id="email" name="email" type="email" ng-model="emails">
-                                        <img src="dependencies/imgs/plus.png" id="plus" ng-click="addEmail()">
+                                        <div class="form-control" id="emailBox">
+                                            <input class="form-control" type="email" placeholder="Email" id="email">
+                                            <img src="dependencies/imgs/plus.png" id="plus" ng-click="addEmail()">
+                                        </div>
+
                                     </div>
                                     <div class="form-group">
                                         <label for="subject">Subject</label>

@@ -16,12 +16,18 @@ $(function() {
         return re.test(email);
     }
 
-    document.getElementById('plus').addEventListener('click',function() {
-        var email = document.getElementById('email');
-        if(email.value !== '' && validateEmail(email.value)) {
+    var emailM = [];
 
+    $('#plus').on('click',function() {
+        var email = $('#email');
+        if(email.val() !== '' && validateEmail(email.val())) {
+            emailM.push(email.val());
+            var btn = $("<button class='btn btn-success'></button>").text(emailM[emailM.length-1]);
+            $('#emailBox').prepend(btn);
+            email.val('');
+            console.log(emailM[emailM.length-1])
         } else {
-            email.value = '';
+            email.val('');
         }
     })
 });
