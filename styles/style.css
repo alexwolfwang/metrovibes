@@ -557,11 +557,11 @@ body {
 
 #contactForm .checkbox label, #contactForm .checkbox button {
     display: inline-block;
+    padding: 0;
 }
 
 #contactForm #submit {
     float: right;
-    padding: 0;
     border: 0;
 }
 
@@ -570,12 +570,15 @@ body {
     resize: none;
 }
 
-#contactForm input[type='checkbox'] {
+#contactForm .saveCheckbox {
     width: 21px;
     height: 21px;
+    border: 1px solid #8c8c8c;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-#contactForm input[type='checkbox'].checked {
+#contactForm .saveCheckbox.checked {
     background: url("../dependencies/imgs/checked.png") no-repeat;
-    /*color: red;*/
+    background-position: 50% 50%;
 }
