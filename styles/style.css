@@ -8,9 +8,13 @@ h1 {  font-size: 33px;  }
 h2 {  font-size: 24px;  }
 h3 {  font-size: 19px;  }
 h4 {  font-size: 16px;  }
-h5 {  font-size: 13px;  }
-h6 {  font-size: 11px;  }
+h5 {  font-size: 14px;  }
+h6 {  font-size: 12px;  }
 
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .col-xs-12, .col-xs-7, .col-xs-6, .col-xs-5, .col-xs-4, .col-xs-3 {
     padding: 0;
@@ -24,7 +28,7 @@ h6 {  font-size: 11px;  }
     text-align: center;
 }
 
-
+/*Title part*/
 
 #title {
     margin-top: 96px;
@@ -39,13 +43,14 @@ h6 {  font-size: 11px;  }
     font-family: 'Open Sans', sans-serif;
 }
 
+/*Menu part*/
 
-    #menu {
-        font-weight: bolder;
-        font-size: 17px;
-        margin-bottom: 38px;
-        border: 0;
-    }
+#menu {
+    font-weight: bolder;
+    font-size: 17px;
+    margin-bottom: 38px;
+    border: 0;
+}
 
 
 @media screen and (max-width: 1199px) {
@@ -80,7 +85,7 @@ h6 {  font-size: 11px;  }
 }
 
 #menu .nav li a img {
-    margin-right: 16px;
+    margin-right: 10%;
 }
 
 #menu .nav li:hover {
@@ -112,14 +117,15 @@ h6 {  font-size: 11px;  }
     border-radius: 5px;
 }
 
+/*graphic part*/
+
 #graphic {
     margin-bottom: 38px;
 }
 
 #graphic .top {
-    height: 151px;
     color: white;
-    margin-bottom: 34px;
+    margin-bottom: 11.29%;
 }
 
 #graphic .top i {
@@ -141,13 +147,8 @@ h6 {  font-size: 11px;  }
 }
 
 #graphic .number1 {
-    font-size: 24px;
     line-height: 16px;
     margin-bottom: 0;
-}
-
-#graphic .number2 {
-    font-size: 14px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -165,14 +166,11 @@ h6 {  font-size: 11px;  }
 }
 
 #graphic .content .timeLoc .time {
-    font-size: 12px;
     color: #8E8071;
 }
 
 #graphic .content .timeLoc .location {
-    font-size: 20px;
     color: #8E8071;
-    margin-top: -15px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -201,25 +199,19 @@ h6 {  font-size: 11px;  }
 #graphic #shares a, #cap a {
     background-color: #F6F0EC;
     text-align: center;
-    padding-bottom: 3px;
 }
 
-#graphic #shares p:nth-child(1), #cap p:nth-child(1) {
-    font-size: 18px;
+#graphic #shares h3:nth-child(1), #cap h3:nth-child(1) {
     font-weight: bolder;
 }
 
-#graphic #shares p:nth-child(2), #cap p:nth-child(2) {
-    margin-top: -12px;
-    font-size: 12px;
-}
 
 @media screen and (max-width: 1199px) {
-    #graphic #shares p:nth-child(1), #cap p:nth-child(1) {
+    #graphic #shares h3:nth-child(1), #cap h3:nth-child(1) {
         font-size: 1.504vw;
     }
 
-    #graphic #shares p:nth-child(2), #cap p:nth-child(2) {
+    #graphic #shares h6:nth-child(2), #cap h6:nth-child(2) {
         font-size: 1.003vw;
         word-spacing: 9999999px;
     }
@@ -230,16 +222,19 @@ h6 {  font-size: 11px;  }
 }
 
 #graphic #aaplChange {
-    color: #8E8071;
-    font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 15.32%;
 }
 
-#graphic #aaplChange .title {
+#graphic #aaplChange h6 {
+    color: #8E8071;
+    font-size: 14px;
+}
+
+#graphic #aaplChange .aTitle,.yTitle {
     margin-bottom: 10px;
 }
 
-#graphic #aaplChange .yearChange {
+#graphic #aaplChange .aapl .yTitle, .yearChange .yTitle {
     padding-left: 7.5%;
 }
 #graphic #aaplChange .yearChange span {
@@ -247,8 +242,8 @@ h6 {  font-size: 11px;  }
     font-size: 18px;
     font-weight: normal;
     background-color: #4DAF7B;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 9.91%;
+    padding-bottom: 9.91%;
 }
 
 @media screen and (max-width: 1199px) {
@@ -262,7 +257,7 @@ h6 {  font-size: 11px;  }
     }
 }
 
-#profile{}
+/*Profile part*/
 
 #profile .avatar {
     background-color: #b1a599;
@@ -274,8 +269,7 @@ h6 {  font-size: 11px;  }
     width: 100%;
 }
 
-#profile .avatar .follower p:first-child {
-    font-size: 17px;
+#profile .avatar .follower h4 {
     font-weight: bolder;
     line-height: 1;
     color: white;
@@ -287,17 +281,16 @@ h6 {  font-size: 11px;  }
     padding-left: 6%;
 }
 
-#profile .avatar .follower p:nth-child(2) {
-    font-size: 13px;
+#profile .avatar .follower h6 {
     color: #4b3f34;
 }
 
 @media screen and (max-width: 1199px) {
-    #profile .avatar .follower p:first-child {
+    #profile .avatar .follower h4 {
         font-size: 1.42vw;
 
     }
-    #profile .avatar .follower p:nth-child(2) {
+    #profile .avatar .follower h6 {
         font-size: 1.086vw;
     }
 }
@@ -330,6 +323,7 @@ h6 {  font-size: 11px;  }
     background-color: #F8F3F0;
 }
 
+/*Statistics part*/
 
 #statistics{
     margin-bottom: 36px;
@@ -365,7 +359,6 @@ h6 {  font-size: 11px;  }
     background-color: white;
     padding-top: 40px;
     padding-bottom: 40px;
-    font-size: 15px;
     font-weight: bolder;
     color: #8E8071;
 }
@@ -390,23 +383,23 @@ h6 {  font-size: 11px;  }
     top: 38%;
 }
 
-#statistics .inPie p:first-child {
+#statistics .inPie h5 {
     font-size: 14px;
     color: red;
 }
 
-#statistics .inPie p:nth-child(2) {
+#statistics .inPie h1 {
     font-size: 33px;
     font-weight: bolder;
     line-height: 1;
 }
 
 @media screen and (max-width: 1199px) {
-    #statistics .inPie p:first-child {
+    #statistics .inPie h5 {
         font-size: 1.17vw;
     }
 
-    #statistics .inPie p:nth-child(2) {
+    #statistics .inPie h1 {
         font-size: 2.757vw;
     }
 }
@@ -421,24 +414,23 @@ h6 {  font-size: 11px;  }
     border-right: 1px solid white;
 }
 
-#statistics .data #audio p:first-child,#statistics .data #video p:first-child,#statistics .data #photo p:first-child {
-    font-size: 16px;
+#statistics .data #audio h4,#statistics .data #video h4,#statistics .data #photo h4 {
     font-weight: bold;
     color: #9A8C7C;
 }
 
-#statistics .data #audio p:nth-child(2),#statistics .data #video p:nth-child(2),#statistics .data #photo p:nth-child(2) {
+#statistics .data #audio h1,#statistics .data #video h1,#statistics .data #photo h1 {
     font-size: 30px;
     font-weight: bold;
     color: #8E8071;
 }
 
 @media screen and (max-width: 1199px) {
-    #statistics .data #audio p:first-child,#statistics .data #video p:first-child,#statistics .data #photo p:first-child {
+    #statistics .data #audio h4,#statistics .data #video h4,#statistics .data #photo h4 {
         font-size: 1.337vw;
     }
 
-    #statistics .data #audio p:nth-child(2),#statistics .data #video p:nth-child(2),#statistics .data #photo p:nth-child(2) {
+    #statistics .data #audio h1,#statistics .data #video h1,#statistics .data #photo h1 {
         font-size: 2.506vw;
     }
 
@@ -487,6 +479,8 @@ h6 {  font-size: 11px;  }
     background-color: #64584c;
 }
 
+/*Navigation part*/
+
 #navigation {
     margin-bottom: 28px;
 }
@@ -497,14 +491,13 @@ h6 {  font-size: 11px;  }
 #navigation #myProfile a, #edit a {
     padding-left: 20.22%;
 }
-#navigation #myProfile p, #edit p {
-    font-size: 15px;
+#navigation #myProfile h4, #edit h4 {
     font-weight: bolder;
     margin: 5px 0;
 }
 
 @media screen and (max-width: 1199px) {
-    #navigation #myProfile p, #edit p {
+    #navigation #myProfile h4, #edit h4 {
         font-size: 1.253vw;
     }
 }
@@ -561,6 +554,8 @@ h6 {  font-size: 11px;  }
     background-color: #4DAF7B;
 }
 
+/*Ribbons part*/
+
 #ribbons {
     border-radius: 5px;
     z-index: 2;
@@ -569,13 +564,11 @@ h6 {  font-size: 11px;  }
     color: white;
     padding-top: 27.93%;
     padding-bottom: 15%;
-    font-size: 15px;
     font-weight: bolder;
     line-height: 1;
 }
-#ribbons #sale p:first-child {
+#ribbons #sale h5 {
     color: #D8F8D9;
-    font-size: 14px;
     margin-bottom: 1px;
     font-weight: bolder;
 }
@@ -594,6 +587,7 @@ h6 {  font-size: 11px;  }
     padding-left: 40px
 }
 
+/*BlogPost part*/
 
 #blogPost {
     margin-bottom: 40px;
@@ -608,7 +602,7 @@ h6 {  font-size: 11px;  }
     width: 80%;
 }
 
-#blogPost .avatar .userInfo p:first-child {
+#blogPost .avatar .userInfo h1 {
     font-size: 28px;
     font-weight: bolder;
     line-height: 18px;
@@ -622,18 +616,17 @@ h6 {  font-size: 11px;  }
     text-align: left;
 }
 
-#blogPost .avatar .userInfo p:nth-child(2) {
-    font-size: 13px;
+#blogPost .avatar .userInfo h5 {
     color: #776b5e;
 }
 
 @media screen and (max-width: 1199px) {
-    #blogPost .avatar .userInfo p:first-child {
+    #blogPost .avatar .userInfo h1 {
         font-size: 2.339vw;
 
     }
 
-    #blogPost .avatar .userInfo p:nth-child(2) {
+    #blogPost .avatar .userInfo h5 {
         font-size: 1.086vw;
     }
 }
@@ -678,6 +671,8 @@ h6 {  font-size: 11px;  }
 #blogPost .profile li:nth-child(2), #blogPost .profile li:nth-child(1) {
     border-right: 1px solid white;
 }
+
+/*ContactForm part*/
 
 #contactForm {
     text-align: left;
@@ -758,6 +753,14 @@ h6 {  font-size: 11px;  }
 #contactForm textarea {
     padding: 16px;
     resize: none;
+}
+
+#contactForm .emailGroup span, .subjectGroup span {
+    color: red;
+}
+
+#contactForm .checkbox .success {
+    color: #00b300;
 }
 
 #contactForm .saveCheckbox {

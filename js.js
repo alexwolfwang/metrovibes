@@ -40,12 +40,52 @@ $(function() {
         var email = $('#email');
         if(email.val() !== '' && validateEmail(email.val())) {
             emailM.push(email.val());
-            var btn = $("<button class='btn btn-success'></button>").text(emailM[emailM.length-1]);
+            var btn = $("<button class='btn btn-success' type='button'></button>").text(emailM[emailM.length-1]);
             $('#emailBox').prepend(btn);
             email.val('');
-            console.log(emailM[emailM.length-1])
+            console.log($('.btn-success').length)
         } else {
             email.val('');
+        }
+    });
+
+    $(document).ready(function() {
+        $(document).on('click','.btn-success',function() {
+            $(this).remove();
+            emailM.length = emailM.length-1;
+            console.log(emailM.length)
+        });
+    });
+
+
+    $('#submit').on('click', function() {
+        $('.success').addClass('hidden');
+        var email = $('#email');
+        var sub = $('#subject');
+
+        console.log(emailM.length + ', ' + email.val() + ', ' + $('btn-success').length);
+
+        if(email.val() == '' && !validateEmail(email.val()) && emailM.length < 1){
+            email.val('');
+            $('.emailGroup span').removeClass('hidden');
+            $('.save').prop('disabled',true)
+        } else {
+            $('.emailGroup span').addClass('hidden');
+        }
+
+        if(sub.val() == '') {
+            $('.subjectGroup span').removeClass('hidden');
+            $('.save').prop('disabled',true)
+        } else {
+            $('.subjectGroup span').addClass('hidden');
+        }
+
+        if(((email.val() !== '' && validateEmail(email.val()))||emailM.length >= 1) && sub.val() !== '' ){
+            $('.success').removeClass('hidden');
+            $('.save').prop('disabled',false);
+            $('.btn-success').remove();
+            email.val('');
+            sub.val("");
         }
     })
 });
