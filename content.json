@@ -1,10 +1,9 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
-  },
-  "exclude": [
-    "node_modules"
+  "name": [
+    "John Raymons"
+  ],
+
+  "info": [
+    "Your talent amazes! This is awesome. Excited to see the final product."
   ]
 }

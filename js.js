@@ -89,4 +89,15 @@ $(function() {
             sub.val("");
         }
     })
+
+
+    //read json
+
+    $(document).ready(function() {
+        $.getJSON('content.json', function(data) {
+            $('#blogPost .userInfo h1').html(data.name);
+            $('#blogPost .userInfo h5').html(data.info);
+
+        })
+    })
 });
