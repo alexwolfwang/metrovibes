@@ -63,9 +63,9 @@ $(function() {
         var email = $('#email');
         var sub = $('#subject');
 
-        console.log(emailM.length + ', ' + email.val() + ', ' + $('btn-success').length);
+        console.log("map length: " + emailM.length + ', val:' + email.val() + ', success: ' + $('.btn-success').length);
 
-        if(email.val() == '' && !validateEmail(email.val()) && emailM.length < 1){
+        if(email.val() == '' && !validateEmail(email.val()) && emailM.length < 1 && $('.btn-success').length < 1){
             email.val('');
             $('.emailGroup span').removeClass('hidden');
             $('.save').prop('disabled',true)
@@ -84,6 +84,7 @@ $(function() {
             $('.success').removeClass('hidden');
             $('.save').prop('disabled',false);
             $('.btn-success').remove();
+            emailM = [];
             email.val('');
             sub.val("");
         }
