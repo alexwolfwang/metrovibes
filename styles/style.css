@@ -526,6 +526,13 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+    #navigation .open .dropdown-menu {
+        position: absolute;
+        background-color: white;
+    }
+}
+
 #navigation .dropdown-menu a {
     font-size: 13px;
     font-weight: bolder;
@@ -533,6 +540,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 7px;
     padding-bottom: 7px;
 }
+
 
 @media screen and (max-width: 1199px) {
     #navigation .dropdown-menu a {
@@ -550,7 +558,7 @@ h1,h2,h3,h4,h5,h6 {
     display: block;
     width: 4px;
     height: 33%;
-    margin-top: -32px;
+    margin-top: -34px;
     background-color: #4DAF7B;
 }
 
