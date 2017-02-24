@@ -557,7 +557,7 @@ h1,h2,h3,h4,h5,h6 {
     position: absolute;
     display: block;
     width: 4px;
-    height: 33%;
+    height: 100%;
     margin-top: -34px;
     background-color: #4DAF7B;
 }
